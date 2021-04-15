@@ -1,7 +1,6 @@
 {
   "name": "@vue-storefront/shopify-theme",
-  "version": "0.0.3",
-  "private": true,
+  "version": "0.3.0",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build -m",

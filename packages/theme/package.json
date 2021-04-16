@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@storefront-ui/vue": "^0.9.1",
-    "@vue-storefront/shopify": "0.0.1",
+    "@vue-storefront/shopify": "0.1.1",
     "@vue-storefront/nuxt": "^2.3.0-rc.3",
     "@vue-storefront/nuxt-theme": "^2.3.0-rc.3",
     "@vue-storefront/middleware": "^2.3.0-rc.3",
@@ -31,5 +31,8 @@
     "jest": "^24.1.0",
     "ejs": "^3.0.2",
     "vue-jest": "^4.0.0-0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

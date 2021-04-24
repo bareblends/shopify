@@ -108,7 +108,7 @@ export default async function getProduct(
     // });
   } else if (params.sort) {
     return await context.client.product
-      .fetchQuery({ first: 20, sortKey: 'TITLE', reverse: false })
+      .fetchQuery(params)
       .then((products) => {
         return products;
       });

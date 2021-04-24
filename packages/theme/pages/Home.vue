@@ -93,7 +93,11 @@ export default {
     const { cart, load: loadCart, addItem: addToCart, isInCart } = useCart();
 
     onSSR(async () => {
-      await productsSearch({ catId: 123, limit: 8 });
+      await productsSearch({ sort: {
+        first: 6,
+        query: 'tag:homepage',
+        reverse: false
+      }});
       await loadCart();
     });
     return {

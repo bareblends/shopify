@@ -256,7 +256,11 @@ export default {
 
     onSSR(async () => {
       await search({ slug });
-      await searchRelatedProducts({ catId: 123, limit: 8 });
+      await searchRelatedProducts({ sort: {
+        first: 6,
+        query: 'tag:product-upsells',
+        reverse: false
+      }});
     });
 
     const updateFilter = (filter) => {

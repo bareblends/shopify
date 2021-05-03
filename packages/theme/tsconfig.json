@@ -28,4 +28,7 @@
       "nuxt-i18n"
     ]
   },
+  "exclude": [
+    "node_modules"
+  ]
 }
